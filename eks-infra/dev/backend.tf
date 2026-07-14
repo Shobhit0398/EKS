@@ -4,7 +4,7 @@ backend "s3" {
 
 bucket = "company-terraform-state"
 
-key = "eks/dev.tfstate"
+key = "dev/terraform.tfstate"
 
 region = "us-east-1"
 
