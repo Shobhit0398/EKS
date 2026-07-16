@@ -8,3 +8,8 @@ variable "private_subnets" {
 
 variable "vpc_id" {}
 
+variable "desired_size" {}
+
+variable "min_size" {}
+
+variable "max_size" {}

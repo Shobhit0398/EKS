@@ -159,11 +159,11 @@ resource "aws_eks_node_group" "workers" {
 
   scaling_config {
 
-    desired_size = 3
+    desired_size = var.desired_size
 
-    min_size = 3
+    min_size = var.min_size
 
-    max_size = 5
+    max_size = var.max_size
   }
 
   ami_type="AL2023_x86_64_STANDARD"
