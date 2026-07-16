@@ -18,7 +18,7 @@ jobs:
 
       run:
 
-        working-directory: eks-infra
+        working-directory: dev
 
     steps:
 
@@ -28,4 +28,4 @@ jobs:
 
       - run: terraform init
 
-      - run: terraform apply -auto-approve
+      - run: terraform apply 

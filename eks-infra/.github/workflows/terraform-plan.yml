@@ -13,7 +13,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: eks-infra
+        working-directory: dev
 
     steps:
 
