@@ -13,3 +13,7 @@ variable "desired_size" {}
 variable "min_size" {}
 
 variable "max_size" {}
+
+variable "ami_type" {}
+
+variable "disk_size" {}

@@ -89,8 +89,6 @@ resource "aws_security_group" "eks" {
 
   name="${var.cluster_name}-sg"
 
-  description="EKS Cluster SG"
-
   vpc_id=var.vpc_id
 
 }
@@ -167,12 +165,9 @@ resource "aws_eks_node_group" "workers" {
   }
 
   ami_type="AL2023_x86_64_STANDARD"
+  ami_type = var.ami_type
 
-  instance_types=[
-
-    "t3.medium"
-
-  ]
-  disk_size=30
+  instance_type = var.instance_type
+  disk_size = var.disk_size
   
 }
