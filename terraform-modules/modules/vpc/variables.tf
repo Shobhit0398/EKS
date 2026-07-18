@@ -20,3 +20,4 @@ variable "availability_zones" {
 
 variable "cluster_name" {}
 
+  
