@@ -17,3 +17,7 @@ variable "max_size" {}
 variable "ami_type" {}
 
 variable "disk_size" {}
+
+variable "instance_type" {
+  type = string
+}

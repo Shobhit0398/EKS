@@ -164,10 +164,9 @@ resource "aws_eks_node_group" "workers" {
     max_size = var.max_size
   }
 
-  ami_type="AL2023_x86_64_STANDARD"
   ami_type = var.ami_type
 
-  instance_type = var.instance_type
+  instance_types = [var.instance_type]
   disk_size = var.disk_size
   
 }
